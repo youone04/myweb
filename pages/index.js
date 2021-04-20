@@ -6,33 +6,40 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-    <motion.div
-     style={{
-      height: '80vh',
-      backgroundColor:'purple'
-    }}
-    initial={{
-     scaleY: 0,
-     backgroundColor:'blanchedalmond'
-    }}
-
-    animate={{
-      scaleY: 1
-    }}
-
-    exit={{
-      scaleY: 0
-    }}
-
-    transition={{
-      duration: .5
-    }}
-
-    >
-      <h1>Home Page</h1>
-      <CardVIew/>
-      
-    </motion.div>
+    <div style={{display:'flex'}}>
+    <div className="" style={{width: '30%',backgroundColor:'red'}}>
+      <h>hallo</h>
+    </div>
+      <motion.div
+      className=""
+       style={{
+        width: '70%',
+        height: '90vh',
+        backgroundColor:'purple'
+      }}
+      initial={{
+       scaleY: 0,
+       backgroundColor:'blanchedalmond'
+      }}
+  
+      animate={{
+        scaleY: 1
+      }}
+  
+      exit={{
+        scaleY: 0
+      }}
+  
+      transition={{
+        duration: .5
+      }}
+  
+      >
+        <h1>Home Page</h1>
+        <CardVIew/>
+        
+      </motion.div>
+    </div>
     </>
   )
 }

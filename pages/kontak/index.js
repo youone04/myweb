@@ -1,14 +1,17 @@
 import Navbar from "../../components/navbar";
 import {motion} from 'framer-motion';
-
+import SectionProfil from '../../components/sectionprofil/index';
 
 export default function Kontak(){
     return(
         <>
         <Navbar/>
+        <div style={{display:'flex'}}>
+        <SectionProfil/>
         <motion.div
         style={{
-            height: '80vh'
+            height: '80vh',
+            width: '70%'
         }}
 
         initial={{
@@ -32,6 +35,7 @@ export default function Kontak(){
         <h1>Kontak Page</h1>
         
         </motion.div>
+        </div>
         </>
     )
 }
